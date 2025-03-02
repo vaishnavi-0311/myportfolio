@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preload" href="style.css" as="style">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/253ec0bd0c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="./assets/me.jpg">
+
+    <link rel="stylesheet" href="style.css">
+    <title> Website with Preloader</title>
+</head>
+
+<body>
+    <!-- Preloader Section -->
+    <div id="preloader">
+
+        <div class="pre-icons">
+            <i class="fa-solid fa-code" style="color: #eaeef6;"></i>
+            <i class="fa-solid fa-user" style="color: #e3e9f2;"></i>
+            <i class="fa-brands fa-github" style="color: #e7ebf3;"></i>
+        </div><br><br>
+
+        <h1 id="msg">
+            <span class="word">Welcome</span>
+            <span class="word">to</span>
+            <span class="word">My</span>
+            <br>
+            <span class="blue"> Portfolio Website</span>
+        </h1>
+        <br>
+        <img src="./assets/pre.svg" style="height: 80px;">
+
+        <p>Loading...</p>
+    </div>
+
+    <!-- Main Content -->
+    <div id="content" style="display: none;">
+        <header>
+            <nav>
+                <div id="logo">
+                    <h2>Vaishnavi</h2>
+                </div>
+
+                <div class="menu-icon" onclick="HamburgerMenu()"><i class="fa-solid fa-bars" style="color: #e7ebf3;"></i>
+                </div>
+
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#about">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <!-- ----------------HOME-SECTION------------ -->
+            <section id="home">
+                <div class="container">
+                    <div id="col-1" class="col">
+                        <div class="desc-col">
+                            <h1 id="role">Frontend &nbsp;
+                                <span class="blue">Developer</span>
+                            </h1>
+
+                            <div class="typer-container">
+                                <span class="typer"></span>
+                                <span class="cursor"></span>
+                            </div>
+
+                            <br>
+                            <p class="info"> I'm passionate web developer 👩🏼‍💻, specializing in building responsive,
+                                dynamic websites that deliver innovative and exceptional user experiences.
+                            </p>
+                        </div>
+
+                        <div class="home-btn">
+                            <a href="mailto:vaishnu0371@gmail.com"> Mail <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="#contact"> Contact <i class="fa-regular fa-address-card"></i>
+                            </a>
+                        </div>
+
+                        <br><br>
+                        <div class="icons">
+                            <i class="fa-brands fa-github" style="color: #e7ebf3;"></i>
+                            <i class="fa-brands fa-linkedin-in" style="color: #5087f4;"></i>
+                            <i class="fa-brands fa-instagram" style="color: #e47aa4;"></i>
+                        </div>
+                    </div>
+
+                    <div id = col-2 class="col">
+                        <div class="gif-col">
+                            <img id="gify" src="./assets/Coding.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!----- --------------ABOUT-SECTION------------------- -->
+            <section id="about">
+                <div class="abt-container">
+                    <h1 id="abt">About Me</h1>
+
+                    <h2 class="abt-line"> ✨ Learn,Guide and Grow ✨</h2>
+
+                    <div class="abt-desc-col">
+                        <div id="abt-col-1" class="abt-col-1">
+                            <div class="abt-desc">
+                                <h1 class="intro">
+                                    <span class="blue">Hello, I'm </span><br>
+                                    Vaishnavi
+                                </h1>
+
+                                <p class="my-intro">
+                                    A Computer Science Graduate student interested in Front-End development, Web
+                                    development.
+                                    Aspiring Full stack Web Developer and I focus on creating engaging digital
+                                    experiences
+                                    and
+                                    always strive to provide the best solutions in every project.
+                                </p>
+                            </div>
+                            <br>
+                            <div id="abt-btn" class="abt-btn">
+                                <a href="./assets/Resume Final.pdf" class="abt-btn-cv">Download CV <i class="fas fa-file"
+                                        style="color: #e2e8f3;"></i>
+                                </a>
+                                <a href="" class="abt-btn-project">View Projects <i class="fa-solid fa-code"
+                                        style="color: #ccd9f0;"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div id="abt-col-2" class="abt-col-2">
+
+                            <div class="my-pic">
+                                <img src="./assets/me-removebg-preview.png" alt="my-pic">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- ----------------PORTFOLIO-SECTION------------ -->
+
+            <section id="portfolio">
+                <div class="porfolio-container">
+                    <h1 id="port">Portfolio Showcase</h1>
+
+                    <h2 class="port-line">✨Explore journey through projects and technical expertise.
+                        Each section represents a milestone in my continuous learning path. ✨
+                    </h2>
+
+                    <div class="port-tabs">
+
+                        <button id="projectsBtn" class="tab active"><i class="fa-solid fa-code"
+                                style="color: #ccd9f0;"></i>
+                            Projects
+                        </button>
+
+                        <button id="techstackBtn" class="tab tech-tab">
+                            <i class="fa-solid fa-cubes" style="color: #8293ab;"></i> Tech Stack
+                        </button>
+                    </div>
+
+                    <!-- ----------------------------------------PROJECT SECTION ----------------------------------- -->
+
+                    <div id="projects" class="prjctsection">
+
+                        <div class="card">
+                            <img src="./assets/ChatBot.gif" style="opacity: 0.7;"  alt="project1">
+                            <h3>Chatbot</h3>
+                            <p>Automated chatbot system Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="port-buttons">
+                                <a href="https://github.com/vaishnavi-0311/Chatbot.git" class="port-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="" class="port-btn">Details <i class="fas fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/qr-gen.gif" style="opacity: 0.9;" alt="project2">
+                            
+                            <h3> QR Generator</h3>
+                            <p>creates scannable QR codes that store URLs. Lorem ipsum dolor sit amet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis, accusantium.</p>
+                            <div class="port-buttons">
+                                <a href="https://github.com/vaishnavi-0311/QR-Generator.git" class="port-btn">Live Demo <i class="fas fa-external-link-alt"></i></a></a>
+                                <a href="" class="port-btn">Details <i class="fas fa-solid fa-arrow-right"></i> </a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/to-do-list-checklist.gif" style="opacity: 0.9;" alt="project3">
+                            <h3>To-Do List</h3>
+                            <p>Manage daily tasks efficiently. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, fugit. 
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <div class="port-buttons">
+                                <a href="https://github.com/vaishnavi-0311/SCT_WD_4.git" class="port-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="" class="port-btn">Details <i class="fas fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card hidden">
+                            <img src="./assets/[GIF] Weather.gif" alt="project4">
+                            <h3>Weather App</h3>
+                            <p>Live weather updates.</p>
+                            <div class="port-buttons">
+                                <a href="" class="port-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="" class="port-btn">Details <i class="fas fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card hidden">
+                            
+                            <img src="./assets/college-media.gif" alt="project5">
+                            <h3>CollegeMedia</h3>
+                            <p>Social platform for students and college </p>
+                           
+                            <div class="port-buttons">
+                                <a href="" class="port-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="" class="port-btn">Details <i class="fas fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="card hidden">
+                            <img src="./assets/snake game.gif" alt="project6">
+                            <h3>Snake and ladder Game</h3>
+                            <p> Snake and Ladder is a luck-based board game where players race to the finish, climbing
+                                ladders and avoiding snakes. Lorem ipsum dolor sit amet.</p>
+                            <div class="port-buttons">
+                                <a href="" class="port-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="" class="port-btn">Details <i class="fas fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="seemore" class="see-more" onclick="toggleProjects()">See More
+                        <i class="fa-solid fa-angle-down" style="color: #ccd9f0;"></i>
+                    </button>
+
+                    <!-- ----------------------------------TECH STACK SECTION ----------------------------------- -->
+
+                    <div id="techstack" class="section hidden">
+                        <div class="tech-container">
+
+                            <div class="tech-row">
+
+                                <div class="tech-icons">
+                                    <img id="htm" src="./assets/html.png" alt="">
+                                </div>
+
+                                <div class="tech-icons">
+                                    <img id="cs" src="./assets/css.png" alt="">
+                                </div>
+
+                                <div class="tech-icons">
+                                    <img id="js" src="./assets/js.png" alt="">
+                                </div>
+
+                                <div class="tech-icons">
+                                    <img id="react" src="./assets/react.png" alt="">
+                                </div>
+
+                                <div class="tech-icons">
+                                    <img id="sql" src="./assets/sql.png" alt="">
+                                </div>
+
+                                <div class="tech-icons">
+                                    <img id="git" src="./assets/git.png" alt="">
+                                </div>
+
+                                <div class="tech-icons">
+                                    <img id="github" src="./assets/github.png" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="contact">
+
+                <h1>Contact Me</h1>
+                <h2 id="subtitle">Got a question? Send me a message, and I'll get back to you soon.</h2>
+                <div class="contact-container">
+                    <div class="card1 contact-form">
+                        <form action="mailto:vaishnu0371@gmail.com" method="post" enctype="text/plain">
+                            <h2>Get in Touch</h2>
+                            <p>Have something to discuss? Send me a message and let's talk.</p>
+                            <br>
+                            <div class="input-group">
+                                <input type="text" placeholder="Your Name">
+                            </div>
+                            <div class="input-group">
+                                <input type="email" placeholder="Your Email">
+                            </div>
+                            <div class="input-group">
+                                <textarea rows="4" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit" class="cbtn">Send Message <i class="fa-solid fa-paper-plane"
+                                    style="color:#ccd9f0;"></i> </button>
+                        </form>
+                    </div>
+                    <div class="card1 connect">
+                        <h2><i class="fa-brands fa-connectdevelop"></i> Connect With Me</h2>
+                        <p>Follow me on social media</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/vaishnavi-kundapur-b54742214/" class="LinkedIn"><i
+                                    class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span></a>
+                            <br><br>
+                            <a href="https://www.instagram.com/_vaishnu._____/" class="Instagram"><i
+                                    class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <br><br>
+                            <a href="https://www.codewars.com/users/vaishnavi-0311" class="Codewars"><i
+                                    class="fa-solid fa-code"></i>
+                                <span>Codewars</span>
+                            </a>
+                            <br><br>
+                            <a href="https://github.com/vaishnavi-0311" class="GitHub"><i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+
+</body>
+
+<script src="script.js"></script>
+
+</html>

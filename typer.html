@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Effect</title>
+    <style>
+        body {
+            background-color: #141415;
+            color: #b2b3f5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding-top: 50px;
+        }
+        
+        .typer {
+            font-size: 24px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 5px;
+            height: 24px;
+            background: #b2b3f5;
+            margin-left: 5px;
+            animation: blink 0.8s infinite;
+        }
+
+        @keyframes blink {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="typer-container">
+        <span class="typer"></span>
+        <span class="cursor"></span>
+    </div>
+
+    <script>
+        const words = ["Web Developer", "Tech Enthusiastic","Full stack web Developer"];
+        let wordIndex = 0;
+        let letterIndex = 0;
+        let isDeleting = false;
+        const speed = 100;  // Typing speed
+        const pause = 1500; // Pause before deleting
+        const typerElement = document.querySelector(".typer");
+
+        function typeEffect() {
+            let currentWord = words[wordIndex];
+            if (isDeleting) {
+                typerElement.textContent = currentWord.substring(0, letterIndex--);
+            } else {
+                typerElement.textContent = currentWord.substring(0, letterIndex++);
+            }
+
+            if (!isDeleting && letterIndex === currentWord.length + 1) {
+                setTimeout(() => isDeleting = true, pause);
+            } else if (isDeleting && letterIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length; // Switch to the next word
+            }
+
+            setTimeout(typeEffect, isDeleting ? speed / 2 : speed);
+        }
+
+        document.addEventListener("DOMContentLoaded", typeEffect);
+    </script>
+
+</body>
+</html>
