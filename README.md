@@ -5,7 +5,7 @@
 Welcome to my personal portfolio website! This project showcases my skills, projects, and experience in web development.
 
 ## 🌟 Live Demo
-🔗 [View Portfolio](https://your-portfolio-link.vercel.app/)
+🔗 [View Portfolio] (https://myportfolio-chi-lime.vercel.app/)
 
 ## 📂 Project Structure
 ```
@@ -43,8 +43,10 @@ This project is deployed using **Vercel**. Follow these steps to deploy your own
 
 ## 📬 Contact Me
 
-📧 Email: your-email@example.com  
-💼 LinkedIn: [Profile](https://www.linkedin.com/in/vaishnavi-kundapur-b54742214)  
+📧 Email: [vaishnu0371@gmail.com]
+
+💼 LinkedIn: [VaishnaviKundapur] (https://www.linkedin.com/in/vaishnavi-kundapur-b54742214) 
+
 📸 Instagram: ([@_vaishnu._____])(https://www.instagram.com/_vaishnu._____/)  
  
 
